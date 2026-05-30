@@ -227,14 +227,13 @@
 
             body {
                 padding: 10px;
-                height: 85vh;
-                overflow: hidden;
+                height: 80vh;
+                overflow: auto;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 background:
                     radial-gradient(#1f4037, #000);
-                overflow: hidden;
                 padding: 20px;
             }
 
@@ -254,15 +253,28 @@
                 gap: 5px;
             }
 
-            .input-box input {
-                padding: 13px;
-                background-color: red;
-                font-size: 14px;
+            .input-box {
+                display: flex;
+                gap: 10px;
+                margin-bottom: 22px;
             }
 
-            .input-box button {
-                width: 50px;
-                font-size: 22px;
+            input {
+                width: 600px;
+                border: none;
+                outline: none;
+                background: rgba(255, 255, 255, .07);
+                padding: 15px;
+                border-radius: 15px;
+                color: white;
+                font-size: 15px;
+                border: 1px solid transparent;
+                transition: .3s;
+            }
+
+            .input-box input:focus {
+                border-color: rgb(72, 8, 223);
+                box-shadow: 0 0 15px rgba(0, 255, 136, .2);
             }
 
             .task {
