@@ -19,7 +19,7 @@
 
         body {
             height: 85vh;
-            overflow-x: hidden;
+            overflow:hidden ;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -31,7 +31,6 @@
 
         .todo-container {
             position: relative;
-            width: 100%;
             max-width: 430px;
             padding: 25px;
             border-radius: 28px;
@@ -216,27 +215,9 @@
             }
         }
 
-        @media(max-width:500px) {
-
-            .todo-container {
-                padding: 20px;
-                border-radius: 22px;
-            }
-
-            .todo-title {
-                font-size: 26px;
-            }
-
-            .nametag {
-                position: fixed;
-                bottom: 200px;
-            }
-
-        }
-
         /* 📱 MOBILE RESPONSIVE */
 
-        @media(max-width:600px) {
+        @media(max-width:1024px) {
 
             body {
                 padding: 12px;
@@ -245,7 +226,6 @@
 
             .todo-container {
                 width: 100%;
-                max-width: 100%;
                 padding: 18px;
                 border-radius: 22px;
                 margin-top: 20px;
@@ -261,6 +241,7 @@
 
             .input-box input {
                 padding: 13px;
+                background-color: red;
                 font-size: 14px;
             }
 
@@ -461,9 +442,7 @@
 
         renderTasks();
 
-        document.addEventListener("contextmenu", function (e) {
-            e.preventDefault();
-        });
+        
 
     </script>
 
